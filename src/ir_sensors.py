@@ -6,6 +6,9 @@ For the proposed mounting, both probes sit inside the black tape when centered.
 BOTH_BLACK does not prove a junction, and NO_LINE does not prove a finish.
 
 Use ir_calibration.py to measure raw levels; run this file for filtered states.
+The competition entry point applies config.py sampling settings without changing
+this sensor implementation. Calibrate on blue/wood/red/green/grey surfaces at
+the final mounting height; both probes remain on tape when the robot is centered.
 
 Integration: call init_ir() once, then update_ir() frequently. When it returns
 True, get_ir_snapshot() returns a new sample. A state_changed flag describes
